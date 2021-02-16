@@ -1,0 +1,41 @@
+.rightPanel {
+	flex-grow: 1;
+
+	.title {
+		display: inline-block;
+		padding: 10px 20px;
+		background: #417a09;
+		font-size: 24px;
+	}
+
+	.content {
+		border-top: 5px solid #417a09;
+		padding: 10px 20px;
+		background: #5f9e21;
+
+		.field {
+			margin-bottom: 10px;
+
+			.label {
+				font-size: 14px;
+				opacity: 0.5
+			}
+
+			.text {
+				font-size: 18px;
+
+				&.capitalize {
+					text-transform: capitalize;
+				}
+			}
+		}
+
+		.edit {
+			display: inline-block;
+			padding: 10px 20px;
+			margin-top: 10px;
+			background: #417a09;
+			cursor: pointer;
+		}
+	}
+}
