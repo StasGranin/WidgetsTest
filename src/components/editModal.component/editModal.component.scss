@@ -1,0 +1,79 @@
+.editModal {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+
+	.modal {
+		.title {
+			display: inline-block;
+			padding: 10px 20px;
+			background: #063d75;
+			font-size: 24px;
+		}
+
+		form {
+			padding: 20px;
+			background: #215f9e;
+			border-top: 5px solid #063d75;
+
+			.field {
+				margin-bottom: 10px;
+
+				label {margin-right: 10px;}
+				input {
+					display: block;
+					background: #4784c1;
+					border: 0 none;
+					padding: 5px 10px;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size: 16px;
+					color: white;
+					border-radius: 3px;
+				}
+			}
+
+			.keyValuePairs {
+				.field {
+					display: flex;
+
+					input {margin-right: 5px;}
+				}
+
+				.addPair {
+					display: inline-block;
+					padding: 5px 10px;
+					border: 2px dashed #71a9e1;
+					color: #71a9e1;
+					cursor: pointer;
+
+					&:hover {background: #3b77b4;}
+				}
+			}
+
+			.actions {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 20px;
+
+				input {
+					padding: 10px 20px;
+					margin-left: 10px;
+					border: 0;
+					color: white;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size: 16px;
+					background: #114c89;
+					cursor: pointer;
+
+					&.cancel {opacity: 0.5;}
+				}
+			}
+		}
+	}
+}
